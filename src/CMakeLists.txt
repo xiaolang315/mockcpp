@@ -297,6 +297,7 @@ ADD_LIBRARY(mockcpp STATIC ${MOCKCPP_SRCS})
 target_include_directories(mockcpp
     INTERFACE
         ${MOCKCPP_SRC_ROOT}/include
+	${MOCKCPP_SRC_ROOT}/3rdpart
 )
 
 INCLUDE_DIRECTORIES(BEFORE ${MOCKCPP_SRC_ROOT}/include ${MOCKCPP_SRC_ROOT}/3rdparty)
