@@ -1,7 +1,7 @@
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
-PROJECT(mockcpp)
+PROJECT(mockcpp VERSION 1.0.0)
 
 INCLUDE(ProjectVar.txt)
 
