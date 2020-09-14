@@ -294,6 +294,11 @@ LINK_DIRECTORIES(${CMAKE_BINARY_DIR}/src ${CMAKE_BINARY_DIR}/tests/3rdparty/test
 
 ADD_LIBRARY(mockcpp STATIC ${MOCKCPP_SRCS})
 
+target_include_directories(mockcpp
+    INTERFACE
+        ${MOCKCPP_SRC_ROOT}/include
+)
+
 INCLUDE_DIRECTORIES(BEFORE ${MOCKCPP_SRC_ROOT}/include ${MOCKCPP_SRC_ROOT}/3rdparty)
 
 ADD_CUSTOM_TARGET(vtbl_related_headers DEPENDS ${MOCKCPP_VTBL_RELATED_HEADERS})
